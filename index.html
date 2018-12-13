@@ -1,0 +1,58 @@
+<!--
+Copyright Information
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+	<meta charset="UTF-8" />
+	<meta content="text/html" />
+	<meta name="description" content="" />
+	<meta name="author" content="Johann Cooper, Parker Redcross"/>
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+
+	<title>The Tull Family Theater Showcase</title>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min"></script>
+	<script type="text/javascript" src="scripts/svg-2.6.3.min"></script>
+	<script type="text/javascript" src="sCase.js"></script>
+	
+	<script type="text/javascript" src="externalities"></script>
+
+	<style>
+	@font-face {
+		/* to be used for headers*/
+		font-family:arcon;
+		src: url(fonts/arcon_regular.otf);
+	}
+	@font-face {
+		/* to be used for subheaders and all other print*/
+		font-family:grotesk;
+		src: url(fonts/hkgrotesk_regular.otf);
+	}
+	@font-face {
+		/* to be used for subheaders and all other print*/
+		font-family:groteskBold;
+		src: url(fonts/hkgrotesk_bold.otf);
+	}
+	html, body, #drawing {
+		margin:0;
+		padding:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		background:#ffffff;
+	}
+  </style>
+</head>
+
+<body>
+	<div id="drawing"></div>
+	<script>
+	   "use strict";
+		sCase.display.init("drawing", 1920, 1080);
+		sCase.data.requestFilmListings();
+	</script>
+</body>
+</html>

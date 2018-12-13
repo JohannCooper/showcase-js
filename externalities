@@ -1,0 +1,46 @@
+// externalities.js
+
+// PLEASE READ
+// externalities.js lets you customize slides in the Showcase application
+// lines beginning in "//" are comments which do not affect the function of Showcase
+// these comments are included for explination and reference of externalities.js
+// the templates referred to may be found in the /samples directory
+
+
+// set the text used to populate slides with the "Slogan Slide" template
+$.data.setBrandingSlogans([
+	// a comma seperated list of branding slogans in quotation marks
+	// use the escape sequence "\m" without quotes for new lines
+
+	// "Custom slogan text goes here.",
+	// "There's always a seat for you at Tull.",
+	// "Join us at the Tull Family Theater."
+]);
+
+// set the text used to populate slides with the "Quips Slide" template
+$.data.setBrandingQuips([
+	// a comma seperated list of branding quips in quotation marks
+	// use the escape sequence "\n" without quotes for new lines
+
+	// "Custom\nQuips\nHere",
+	// "Soda.\nPopcorn.\nAction.",
+	// "Come Early.\nStay Late."
+]);
+
+// set the text used to populate slides with the "Feature Slide" template
+$.data.setFeatureSlides([
+	// a comma seperated list of data enclosed in curly braces
+	// each set of curly braces denotes a new slide
+	
+	// {
+		// file name of image in /images directory
+		// image : "sample1.png",
+
+		// title to appear on slide
+		// title : "Sample Slide 1",
+
+		// copy text to appear on slide
+		// use the espcape sequence "\n" without quotes for new lines
+		// text : "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\nCurabitur ac auctor felis.\nPhasellus a aliquet est.\nAliquam non pulvinar mi.\nMorbi lacus mi, tristique vel\nligula eget, auctor pulvinar sem."
+	// }
+]);
